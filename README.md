@@ -21,11 +21,12 @@ npm install jest supertest
 npm install dotenv
 ```
 
-3. Crie um arquivo .env e nele defina as variaveis de ambiente ```DB_USER``` para o email correspondente e ```DB_PASS``` para a senha correspondente. Segue um exemplo de como o arquivo deve ser escrito:
+3. Crie um arquivo .env e nele defina as variaveis de ambiente ```DB_USER``` para o email correspondente, ```DB_PASS``` para a senha correspondente e ```DB_TICKET``` para o número de um ticket de atendimento existente. Segue um exemplo de como o arquivo deve ser escrito:
 
 ```bash
 DB_USER="email@gmail.com"
 DB_PASS="minhasenha123"
+DB_TICKET="192573"
 ```
 
 ## Uso
