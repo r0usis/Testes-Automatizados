@@ -1,20 +1,26 @@
 # Testes Automatizados em Node.js
 Neste projeto estão sendo automatizados os testes para login e envio de mensagens de texto, audio e imagens na plataforma de chat da JetSales, utilizando as bibliotecas Jest e Supertest.
 
-## Tabela de Conteúdo
+## Tópicos
 - [Configuração](#configuração)
 - [Uso](#uso)
 - [Descrição dos testes](#descrição)
 
 ## Configuração
 
-1. Inicie o projeto Node
+1. Clone o repositório em seu dispositivo usando
+
+```bash
+git clone https://github.com/r0usis/Testes-Automatizados
+```
+   
+2. Inicie o projeto Node
 
 ```bash
 npm init -y
 ```
 
-2. Instale as bibliotecas utilizando o comando npm
+3. Instale as bibliotecas utilizando o comando npm
 
 ```bash
 npm install jest supertest
@@ -41,12 +47,12 @@ npm test
 
 Este projeto realiza 6 testes, onde 2 testes são de login e 4 são de envio de mensagens.
 
--- Login
+1. Login
 
 - Verifica se o login realizado com credenciais válidas (que são as variaveis de ambiente definidas no arquivo .env) retorna o status 200 de sucesso;
 - Verifica se o login com credenciais inválidas retorna o status 401 de 
 
--- Envio de mensagens
+2. Envio de mensagens
 
 - Verifica se o envio de mensagem de texto utilizando um token válido retorna o status 200 de sucesso;
 - Verifica se o envio de mensagem sem utilizar um token retorna o status 403 de "token invalido";
